@@ -4,3 +4,7 @@ Thumbs.db
 *.zip
 *.crx
 *.pem
+node_modules/
+store-assets/node_modules/
+store-assets/package-lock.json
+store-assets/package.json

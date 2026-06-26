@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Tweet Unyeet</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.6;
+        max-width: 720px;
+        margin: 40px auto;
+        padding: 0 20px;
+        color: #111;
+      }
+      h1, h2 { line-height: 1.3; }
+      table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+      th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+      th { background: #f5f5f5; }
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy for Tweet Unyeet</h1>
+    <p><strong>Last Updated:</strong> June 26, 2026</p>
+
+    <h2>Overview</h2>
+    <p>
+      Tweet Unyeet is a Chrome extension that saves tweets you scroll past on your X home timeline
+      so you can find them again later. This privacy policy explains how the extension handles data.
+    </p>
+
+    <h2>Data Collection and Use</h2>
+    <h3>Data We Collect</h3>
+    <ul>
+      <li><strong>Saved tweets</strong>: Author display name, tweet text, tweet URL, and which home timeline tab you were viewing. Stored locally when a tweet enters your viewport on x.com/home.</li>
+      <li><strong>User preferences</strong>: Max tweets to keep, which timeline tabs to save from, and detected timeline tab names. Stored locally in <code>chrome.storage.local</code>.</li>
+    </ul>
+
+    <h3>Data We Do NOT Collect</h3>
+    <ul>
+      <li>Your X/Twitter login credentials or passwords</li>
+      <li>Browsing history outside x.com and twitter.com</li>
+      <li>Data from other browser tabs or windows</li>
+      <li>Personal contact information (email, address, phone)</li>
+      <li>Location data</li>
+      <li>Financial or payment information</li>
+    </ul>
+
+    <h2>Data Storage</h2>
+    <p>
+      All data is stored locally on your device using <code>chrome.storage.local</code>.
+      No data is transmitted to external servers. Data persists until you uninstall the extension
+      or clear extension data in Chrome settings.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      This extension does not send data to any third-party services. All processing occurs locally
+      on your device. The extension reads public tweet content from X pages you visit; it does not
+      call X APIs or third-party analytics.
+    </p>
+
+    <h2>Permissions</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>Save tweets and settings locally in your browser</td></tr>
+        <tr><td>Host access (x.com, twitter.com)</td><td>Detect and save tweets from your home timeline only</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Your Rights</h2>
+    <ul>
+      <li><strong>View your data</strong>: Open the extension popup to see saved tweets and settings.</li>
+      <li><strong>Delete your data</strong>: Uninstall the extension, or go to Chrome Settings → Extensions → Tweet Unyeet → Details → Clear data.</li>
+      <li><strong>Disable anytime</strong>: Turn off the extension at <code>chrome://extensions</code>.</li>
+    </ul>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this policy from time to time. Changes will be reflected in the "Last Updated"
+      date above.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      This extension is not directed at children under 13. We do not knowingly collect data from
+      children under 13.
+    </p>
+
+    <h2>Contact</h2>
+    <ul>
+      <li><strong>GitHub</strong>: <a href="https://github.com/dan-dr/tweet-unyeet">https://github.com/dan-dr/tweet-unyeet</a></li>
+      <li><strong>Issues</strong>: <a href="https://github.com/dan-dr/tweet-unyeet/issues">https://github.com/dan-dr/tweet-unyeet/issues</a></li>
+    </ul>
+
+    <p><em>This privacy policy applies to version 1.1 and later of Tweet Unyeet.</em></p>
+  </body>
+</html>

@@ -23,7 +23,9 @@
     "default_title": "Tweet Unyeet"
   },
   "icons": {
+    "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"
-  }
+  },
+  "homepage_url": "https://github.com/dan-dr/tweet-unyeet"
 }

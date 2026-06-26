@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1280px;
+      height: 800px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #0f1419 0%, #1a2332 50%, #0d1117 100%);
+      color: #e7e9ea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      padding: 48px;
+    }
+    .hero { max-width: 520px; }
+    .hero h1 { font-size: 42px; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 16px; }
+    .hero p { font-size: 18px; line-height: 1.5; color: #8b98a5; margin-bottom: 24px; }
+    .pill { display: inline-block; background: #1d9bf01a; color: #1d9bf0; border: 1px solid #1d9bf044; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; margin-right: 8px; margin-bottom: 8px; }
+    .popup {
+      width: 380px;
+      background: #fff;
+      color: #0f1419;
+      border-radius: 12px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+      overflow: hidden;
+    }
+    .popup-header { display: flex; justify-content: space-between; align-items: center; padding: 16px; border-bottom: 1px solid #eff3f4; }
+    .popup-header h2 { font-size: 16px; font-weight: 600; }
+    .badge { font-size: 12px; background: #f7f9f9; border: 1px solid #eff3f4; padding: 2px 10px; border-radius: 999px; color: #536471; }
+    .section { padding: 12px 16px; border-bottom: 1px solid #eff3f4; }
+    .section h3 { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+    .section p { font-size: 12px; color: #536471; }
+    .search { margin: 12px 16px; padding: 8px 12px; border: 1px solid #cfd9de; border-radius: 8px; font-size: 13px; color: #536471; }
+    .tweet { padding: 12px 16px; border-bottom: 1px solid #eff3f4; }
+    .tweet-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 4px; }
+    .author { font-size: 13px; font-weight: 600; }
+    .timeline { font-size: 11px; background: #f7f9f9; border: 1px solid #eff3f4; padding: 1px 8px; border-radius: 999px; color: #536471; }
+    .content { font-size: 13px; color: #0f1419; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Tweet Unyeet</h1>
+    <p>Save tweets you've scrolled past on your X home timeline — locally, searchable, private.</p>
+    <div>
+      <span class="pill">Viewport-only saving</span>
+      <span class="pill">Timeline toggles</span>
+      <span class="pill">Fuzzy search</span>
+      <span class="pill">100% local storage</span>
+    </div>
+  </div>
+  <div class="popup">
+    <div class="popup-header">
+      <h2>Tweet Unyeet</h2>
+      <span class="badge">3 saved</span>
+    </div>
+    <div class="section">
+      <h3>Settings</h3>
+      <p>Saves tweets you scroll past on your home timeline.</p>
+    </div>
+    <div class="search">Search tweets...</div>
+    <div class="tweet">
+      <div class="tweet-meta"><span class="author">@naval</span><span class="timeline">For you</span></div>
+      <div class="content">Specific knowledge is found by pursuing your genuine curiosity.</div>
+    </div>
+    <div class="tweet">
+      <div class="tweet-meta"><span class="author">@paulg</span><span class="timeline">Following</span></div>
+      <div class="content">The way to get startup ideas is not to try to think of startup ideas.</div>
+    </div>
+    <div class="tweet">
+      <div class="tweet-meta"><span class="author">@levelsio</span><span class="timeline">For you</span></div>
+      <div class="content">Ship it. Then iterate.</div>
+    </div>
+  </div>
+</body>
+</html>
