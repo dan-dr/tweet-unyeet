@@ -14,8 +14,35 @@ Copy these into the Chrome Web Store developer dashboard when submitting.
 
 > Tweet Unyeet has one purpose: save tweets the user has scrolled past on their X home timeline for later reference.
 
-## Data use certification (dashboard form)
+## Remote code
 
-- **Does your extension collect user data?** Yes — tweet text, author display name, tweet URL, and timeline tab label, stored locally only.
-- **Is data sold or used for unrelated purposes?** No.
-- **Is data transmitted off-device?** No.
+**Select:** `No, I am not using remote code`
+
+If a justification field still appears:
+
+> This extension does not execute remotely hosted code. All JavaScript (content.js, popup.js) is bundled in the extension package. The extension does not use eval(), does not load external scripts, and does not fetch executable code from any server.
+
+## Data use certification (Privacy practices tab)
+
+**Data collected — check these:**
+- Website content (tweet text and author display names read from X pages)
+- Web browsing activity (limited to detecting x.com/twitter.com home timeline and which tab is active)
+
+**Do NOT check:** health, financial, authentication, location, personal communications, etc.
+
+**Certifications — check all that apply:**
+- Data is not sold to third parties
+- Data is not used for purposes unrelated to the extension's single purpose
+- Data is not used for creditworthiness or lending purposes
+- Data is not used for personalized advertising
+- You comply with the Limited Use policy
+
+**Privacy policy URL:**
+https://dan-dr.github.io/tweet-unyeet/privacy-policy.html
+
+## Publisher contact email (Settings page)
+
+1. Go to [Developer Dashboard](https://chrome.google.com/webstore/devconsole) → **Settings** (gear icon or Publisher settings)
+2. Enter your contact email
+3. Click the verification link Google sends to that inbox
+4. Return and publish
