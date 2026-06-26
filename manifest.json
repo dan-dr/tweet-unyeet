@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Tweet Unyeet",
+  "version": "1.1",
+  "description": "Saves recently viewed tweets so you can find them again if they disappear.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tweet Unyeet"
+  },
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

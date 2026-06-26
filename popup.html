@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tweet Unyeet</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1 class="title">Tweet Unyeet</h1>
+        <span class="badge" id="tweetCount">0 saved</span>
+      </header>
+
+      <div class="card">
+        <div class="card-header">
+          <p class="card-title">Settings</p>
+          <p class="card-description">Saves tweets you scroll past on your home timeline.</p>
+        </div>
+        <div class="card-content">
+          <div class="settings-grid">
+            <div class="setting-row">
+              <label class="setting-label" for="maxTweets">
+                <span>Max tweets</span>
+                <span>How many recent tweets to keep</span>
+              </label>
+              <input id="maxTweets" class="input" type="number" min="1" max="10000" />
+            </div>
+
+            <div class="separator"></div>
+
+            <div>
+              <p class="subsection-title">Timelines to save</p>
+              <p class="subsection-hint">Open x.com/home to detect your tabs.</p>
+              <div id="timelineToggles" class="settings-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <p class="card-title">Saved tweets</p>
+        </div>
+        <div class="card-content">
+          <div class="search-wrap">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </svg>
+            <input
+              id="search"
+              class="input input-wide"
+              type="search"
+              placeholder="Search tweets..."
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <div id="tweets" class="tweet-list"></div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
